@@ -1,65 +1,52 @@
-# vscode-java-saber README
+# Java Development Utilities(Saber) for VS Code
+This extension includes many useful utilities for Java. 
 
-This is the README for your extension "vscode-java-saber". After writing up a brief description, we recommend including the following sections.
+# Overview
+It makes users coding in java more efficient. Here`s a list of features:
+* New Java files(annotation/class/interface/enum)
+* Generate Getters and Getters
+* Copy Qualified Name
 
-## Features
+Some features ready to do:
+* New Package
+* Rename Java File
+* Generate Docs
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+# Requirements
+* JDK (version 1.8.0 or later)
+* VS Code (version 1.19.0 or later)
 
-For example if there is an image subfolder under your extension project workspace:
+# Install
+* clone this project
+* copy the project to the directory of extension
+* restart VS Code
 
-\!\[feature X\]\(images/feature-x.png\)
+# Use
+PS: These functions are implemented by parsing strings in java files. Therefore, your codes should best meet the specification.
+## New Java Files
+1. right click a java file or a directory in the explorer
+![Alt text](./preview/saber.new.file.png)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+2. has a active text editor, ctrl + shift + p, type: java new
+![Alt text](./preview/saber.new.file.p.png)
+It will create a java file in the same directory of the opened file
 
-## Requirements
+## Generate Getters and Getters
+1. right click the opened java file in the editor
+![Alt text](./preview/saber.getter.setter.png)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+2. has a active text editor, ctrl + shift + p, type: getter setter
+![Alt text](./preview/saber.getter.setter.p.png)
 
-## Extension Settings
+## Copy Qualified Name
+1. right click the opened java file in the explorer
+![Alt text](./preview/saber.new.file.png)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+2. has a active text editor, ctrl + shift + p, type: copy qualified name
+![Alt text](./preview/saber.copy.qualified.name.png)
 
-For example:
+# Feedback and Questions
+You can find the full list of issues at [Issue Tracker](https://github.com/jiangdequan/vscode-java-saber/issues). You can submit a [bug or feature suggestion](https://github.com/jiangdequan/vscode-java-saber/issues/new).
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+# License
+Dual-licensed under [BSD 2-Clause License](http://opensource.org/licenses/BSD-2-Clause) and [GPLv2 with the Classpath Exception](http://openjdk.java.net/legal/gplv2+ce.html).

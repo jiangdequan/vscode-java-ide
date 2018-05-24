@@ -15,7 +15,8 @@
         "onCommand:extension.newClassFile",
         "onCommand:extension.newEnumFile",
         "onCommand:extension.newInterfaceFile",
-        "onCommand:extension.generateGettersAndSetters"
+        "onCommand:extension.generateGettersAndSetters",
+        "onCommand:extension.copyQualifiedName"
     ],
     "main": "./extension",
     "contributes": {
@@ -39,8 +40,69 @@
             {
                 "command": "extension.generateGettersAndSetters",
                 "title": "Java: Generate Getters and Setters..."
+            },
+            {
+                "command": "extension.copyQualifiedName",
+                "title": "Java: Copy Qualified Name"
             }
-        ]
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "when": "resourceLangId == java",
+                    "command": "extension.newAnnotationFile",
+                    "alt": "extension.newAnnotationFile"
+                },
+                {
+                    "when": "explorerResourceIsFolder == true",
+                    "command": "extension.newAnnotationFile",
+                    "alt": "extension.newAnnotationFile"
+                },
+                {
+                    "when": "resourceLangId == java",
+                    "command": "extension.newClassFile",
+                    "alt": "extension.newClassFile"
+                },
+                {
+                    "when": "explorerResourceIsFolder == true",
+                    "command": "extension.newClassFile",
+                    "alt": "extension.newClassFile"
+                },
+                {
+                    "when": "resourceLangId == java",
+                    "command": "extension.newEnumFile",
+                    "alt": "extension.newEnumFile"
+                },
+                {
+                    "when": "explorerResourceIsFolder == true",
+                    "command": "extension.newEnumFile",
+                    "alt": "extension.newEnumFile"
+                },
+                {
+                    "when": "resourceLangId == java",
+                    "command": "extension.newInterfaceFile",
+                    "alt": "extension.newInterfaceFile"
+                },
+                {
+                    "when": "explorerResourceIsFolder == true",
+                    "command": "extension.newInterfaceFile",
+                    "alt": "extension.newInterfaceFile"
+                },
+                {
+                    "when": "resourceLangId == java",
+                    "command": "extension.copyQualifiedName",
+                    "alt": "extension.copyQualifiedName"
+                }
+            ],
+            "editor/context": [
+                {
+                    "when": "resourceLangId == java",
+                    "command": "extension.generateGettersAndSetters",
+                    "alt": "extension.generateGettersAndSetters",
+                    "group": "1_modification"
+                }
+            ]
+        }
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
@@ -51,6 +113,7 @@
         "vscode": "^1.1.6",
         "eslint": "^4.11.0",
         "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "@types/mocha": "^2.2.42",
+        "clipboardy": "^1.2.3"
     }
 }
