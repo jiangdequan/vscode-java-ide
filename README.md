@@ -1,4 +1,4 @@
-# Java Development Utilities(Saber) for VS Code
+# Saber for VS Code | [中文](README_CN.md)
 This extension includes many useful utilities for Java. 
 
 # Overview
@@ -11,6 +11,7 @@ Some features ready to do:
 * New Package
 * Rename Java File
 * Generate Docs
+* Sort Project By Name
 
 # Requirements
 * JDK (version 1.8.0 or later)
