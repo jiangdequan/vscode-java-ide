@@ -8,12 +8,7 @@ function activate(context) {
     // This line of code will only be executed once when your extension is activated
     console.log('Congratulations, your extension "vscode-java-saber" is now active!');
 
-    saber.newJavaFile(context, 'extension.newAnnotationFile', saber.FileType.annotation);
-    saber.newJavaFile(context, 'extension.newClassFile', saber.FileType.class);
-    saber.newJavaFile(context, 'extension.newEnumFile', saber.FileType.enum);
-    saber.newJavaFile(context, 'extension.newInterfaceFile', saber.FileType.interface);
-    saber.generateGettersAndSetters(context, 'extension.generateGettersAndSetters');
-    saber.copyQualifiedName(context, 'extension.copyQualifiedName');
+    saber.registerCommand(context);
 }
 exports.activate = activate;
 

@@ -11,12 +11,7 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.newAnnotationFile",
-        "onCommand:extension.newClassFile",
-        "onCommand:extension.newEnumFile",
-        "onCommand:extension.newInterfaceFile",
-        "onCommand:extension.generateGettersAndSetters",
-        "onCommand:extension.copyQualifiedName"
+        "*"
     ],
     "main": "./extension",
     "contributes": {
@@ -44,6 +39,10 @@
             {
                 "command": "extension.copyQualifiedName",
                 "title": "Java: Copy Qualified Name"
+            },
+            {
+                "command": "extension.newPackage",
+                "title": "Java: New Package"
             }
         ],
         "menus": {
@@ -92,6 +91,11 @@
                     "when": "resourceLangId == java",
                     "command": "extension.copyQualifiedName",
                     "alt": "extension.copyQualifiedName"
+                },
+                {
+                    "when": "explorerResourceIsFolder == true",
+                    "command": "extension.newPackage",
+                    "alt": "extension.newPackage"
                 }
             ],
             "editor/context": [

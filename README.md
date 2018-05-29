@@ -6,12 +6,12 @@ It makes users coding in java more efficient. Here`s a list of features:
 * New Java files(annotation/class/interface/enum)
 * Generate Getters and Getters
 * Copy Qualified Name
+* New Package
 
 Some features ready to do:
-* New Package
+* Sort Project By Name
 * Rename Java File
 * Generate Docs
-* Sort Project By Name
 
 # Requirements
 * JDK (version 1.8.0 or later)
