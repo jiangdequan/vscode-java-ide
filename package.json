@@ -1,9 +1,23 @@
 {
     "name": "vscode-java-saber",
-    "displayName": "vscode-java-saber",
-    "description": "Some useful functions to help coding.",
+    "displayName": "Java IDE",
+    "description": "To make the vscode work as Eclipse or IDEA when you are coding in java.",
     "version": "0.0.1",
-    "publisher": "bo1318",
+    "publisher": "YouMayCallMeV",
+    "repository": {
+        "url": "https://github.com/jiangdequan/vscode-java-saber"
+    },
+    "bugs": {
+        "url": "https://github.com/jiangdequan/vscode-java-saber/issues"
+    },
+    "icon": "logo.jpg",
+    "keywords": [
+        "new java file",
+        "copy qualified name",
+        "generate getter setter",
+        "new package"
+    ],
+    "homepage": "https://github.com/jiangdequan/vscode-java-saber/blob/master/README.md",
     "engines": {
         "vscode": "^1.23.0"
     },

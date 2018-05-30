@@ -1,5 +1,5 @@
 # Saber for VS Code | [中文](README_CN.md)
-This extension includes many useful utilities for Java. 
+This extension includes many useful utilities for Java. To make the vscode work as Eclipse or IDEA when you are coding in java.
 
 # Overview
 It makes users coding in java more efficient. Here`s a list of features:
@@ -18,33 +18,42 @@ Some features ready to do:
 * VS Code (version 1.19.0 or later)
 
 # Install
-* clone this project
-* copy the project to the directory of extension
-* restart VS Code
+* Install from the [Marketplace](https://marketplace.visualstudio.com/), you can find it by typing: "vscode-java-saber" "Java IDE"
+
+Or:  
+
+* Clone this project
+* Copy the project to the directory of extension
+* Restart VS Code
 
 # Use
-PS: These functions are implemented by parsing strings in java files. Therefore, your codes should best meet the specification.
-## New Java Files
-1. right click a java file or a directory in the explorer
-![Alt text](./preview/saber.new.file.png)
+PS: These functions are implemented by parsing strings in java files. Therefore, your codes should best meet the specification of java.
 
-2. has a active text editor, ctrl + shift + p, type: java new
-![Alt text](./preview/saber.new.file.p.png)
+## New Java Files
+1. Right click a java file or a directory in the explorer
+![Alt text](./preview/java.ide.new.java.file.png)
+
+2. You must open a java file in text editor => ctrl + shift + p => type: java new
+![Alt text](./preview/java.ide.new.java.file.cmd.png)
 It will create a java file in the same directory of the opened file
 
 ## Generate Getters and Getters
-1. right click the opened java file in the editor
-![Alt text](./preview/saber.getter.setter.png)
+1. Right click the opened java file in the editor
+![Alt text](./preview/java.ide.generate.getter.setter.png)
 
-2. has a active text editor, ctrl + shift + p, type: getter setter
-![Alt text](./preview/saber.getter.setter.p.png)
+2. You must open a java file in text editor => ctrl + shift + p => type: getter setter
+![Alt text](./preview/java.ide.generate.getter.setter.cmd.png)
 
 ## Copy Qualified Name
-1. right click the opened java file in the explorer
-![Alt text](./preview/saber.new.file.png)
+1. Right click the opened java file in the explorer
+![Alt text](./preview/java.ide.copy.qualified.name.png)
 
-2. has a active text editor, ctrl + shift + p, type: copy qualified name
-![Alt text](./preview/saber.copy.qualified.name.png)
+2. You must open a java file in text editor => ctrl + shift + p => type: copy qualified name
+![Alt text](./preview/java.ide.copy.qualified.name.cmd.png)
+
+## New Package
+1. Right click a directory
+![Alt text](./preview/java.ide.new.package.png)
 
 # Feedback and Questions
 You can find the full list of issues at [Issue Tracker](https://github.com/jiangdequan/vscode-java-saber/issues). You can submit a [bug or feature suggestion](https://github.com/jiangdequan/vscode-java-saber/issues/new).
