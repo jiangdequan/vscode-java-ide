@@ -37,7 +37,7 @@ PS: These functions are implemented by parsing strings in java files. Therefore,
 ![Alt text](./preview/java.ide.new.java.file.cmd.png)
 It will create a java file in the same directory of the opened file
 
-## Generate Getters and Getters
+## Generate Getters and Setters
 1. Right click the opened java file in the editor
 ![Alt text](./preview/java.ide.generate.getter.setter.png)
 
