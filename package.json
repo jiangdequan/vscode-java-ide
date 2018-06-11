@@ -2,7 +2,7 @@
     "name": "vscode-java-saber",
     "displayName": "Java IDE",
     "description": "To make the vscode work as Eclipse or IDEA when you are coding in java.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "YouMayCallMeV",
     "repository": {
         "url": "https://github.com/jiangdequan/vscode-java-saber"
@@ -15,7 +15,8 @@
         "new java file",
         "copy qualified name",
         "generate getter setter",
-        "new package"
+        "new package",
+        "sort projects"
     ],
     "homepage": "https://github.com/jiangdequan/vscode-java-saber/blob/master/README.md",
     "engines": {
@@ -29,6 +30,16 @@
     ],
     "main": "./extension",
     "contributes": {
+        "configuration": {
+            "title": "VSCodeclipse",
+            "properties": {
+                "ide.projectAutoSort": {
+                    "type": "boolean",
+                    "description": "Whether auto sorting is enabled",
+                    "default": true
+                }
+            }
+        },
         "commands": [
             {
                 "command": "extension.newAnnotationFile",
@@ -57,6 +68,14 @@
             {
                 "command": "extension.newPackage",
                 "title": "Java: New Package"
+            },
+            {
+                "command": "extension.sortWorkspace",
+                "title": "IDE: Sort Project By Name"
+            },
+            {
+                "command": "extension.executeMavenGoal",
+                "title": "IDE: Maven build"
             }
         ],
         "menus": {
@@ -110,6 +129,11 @@
                     "when": "explorerResourceIsFolder == true",
                     "command": "extension.newPackage",
                     "alt": "extension.newPackage"
+                },
+                {
+                    "when": "resourceFilename == pom.xml",
+                    "command": "extension.executeMavenGoal",
+                    "alt": "extension.executeMavenGoal"
                 }
             ],
             "editor/context": [
@@ -118,6 +142,16 @@
                     "command": "extension.generateGettersAndSetters",
                     "alt": "extension.generateGettersAndSetters",
                     "group": "1_modification"
+                }
+            ],
+            "commandPalette": [
+                {
+                    "command": "extension.executeMavenGoal",
+                    "when": "never"
+                },
+                {
+                    "command": "extension.newPackage",
+                    "when": "never"
                 }
             ]
         }
