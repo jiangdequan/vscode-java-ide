@@ -8,7 +8,11 @@ function activate(context) {
     // This line of code will only be executed once when your extension is activated
     console.log('Congratulations, your extension "vscode-java-saber" is now active!');
 
-    saber.registerCommand(context);
+    try {
+        saber.registerCommand(context);
+    } catch (error) {
+        console.log(error);
+    }
 }
 exports.activate = activate;
 
