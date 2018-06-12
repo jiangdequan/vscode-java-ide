@@ -35,8 +35,16 @@
             "properties": {
                 "ide.projectAutoSort": {
                     "type": "boolean",
-                    "description": "Whether auto sorting is enabled",
-                    "default": true
+                    "description": "Whether auto sorting is enabled. Auto sorting is working when adding a project.",
+                    "default": false
+                },
+                "ide.mavenDefaultGoals": {
+                    "type": "array",
+                    "description": "Default maven goals for every maven projects.",
+                    "default": [
+                        "clean install -Dmaven.test.skip=true",
+                        "clean install"
+                    ]
                 }
             }
         },
