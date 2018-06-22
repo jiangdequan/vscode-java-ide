@@ -7,11 +7,12 @@
 * 生成get和set方法
 * 复制类路径
 * 创建包
+* 按工程名排序
+* 执行Maven
 
 其他准备加入的功能:
 * 重命名Java文件
 * 生成文档注释
-* 按工程名排序
 
 # 环境准备
 * JDK 1.8及以上
@@ -54,6 +55,21 @@ PS: 该扩展的大多数功能是通过解析字符串来实现的. 因此, 确
 ## 新建包
 1. 右键目录或者包
 ![Alt text](./preview/java.ide.new.package.png)
+
+## 按工程名排序
+1.右键左侧工程浏览框
+![Alt text](./preview/java.ide.sort.project.menu.png)
+
+2.编辑配置"ide.projectAutoSort"为true, 当添加项目的时候会自动排序, 默认为false
+
+3.ctrl + shift + p => 输入: Sort Project By Name
+
+## 执行Maven
+1.在pom.xml右键
+![Alt text](./preview/java.ide.run.as.menu.png)
+![Alt text](./preview/java.ide.run.as.goals.png)
+
+2.编辑配置"ide.mavenDefaultGoals"为常用的maven指令, 默认为"clean install -Dmaven.test.skip=true"和"clean install"
 
 # 问题和反馈
 在[Issue Tracker](https://github.com/jiangdequan/vscode-java-saber/issues)你可以看到所有的Issue.你也可以通过[bug or feature suggestion](https://github.com/jiangdequan/vscode-java-saber/issues/new)反馈问题和建议.

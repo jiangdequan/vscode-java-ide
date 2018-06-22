@@ -7,9 +7,10 @@ It makes users coding in java more efficient. Here`s a list of features:
 * Generate Getters and Getters
 * Copy Qualified Name
 * New Package
+* Sort Project By Name
+* Run Maven Goals
 
 Some features ready to do:
-* Sort Project By Name
 * Rename Java File
 * Generate Docs
 
@@ -31,7 +32,8 @@ PS: These functions are implemented by parsing strings in java files. Therefore,
 
 ## New Java Files
 1. Right click a java file or a directory in the explorer
-![Alt text](./preview/java.ide.new.java.file.png)
+![Alt text](./preview/java.ide.new.files.menu.png)
+![Alt text](./preview/java.ide.new.files.png)
 
 2. You must open a java file in text editor => ctrl + shift + p => type: java new
 ![Alt text](./preview/java.ide.new.java.file.cmd.png)
@@ -54,6 +56,21 @@ It will create a java file in the same directory of the opened file
 ## New Package
 1. Right click a directory
 ![Alt text](./preview/java.ide.new.package.png)
+
+## Sort Project By Name
+1.Right click at the project explorer
+![Alt text](./preview/java.ide.sort.project.menu.png)
+
+2.edit the config "ide.projectAutoSort" to true, it will auto sort projects by name when adding a project to the workspace, default is false
+
+3.ctrl + shift + p => type: Sort Project By Name
+
+## Run Maven Goals
+1. Right click a pom.xml
+![Alt text](./preview/java.ide.run.as.menu.png)
+![Alt text](./preview/java.ide.run.as.goals.png)
+
+2.edit the config "ide.mavenDefaultGoals" to what you like, default is "clean install -Dmaven.test.skip=true" and "clean install"
 
 # Feedback and Questions
 You can find the full list of issues at [Issue Tracker](https://github.com/jiangdequan/vscode-java-saber/issues). You can submit a [bug or feature suggestion](https://github.com/jiangdequan/vscode-java-saber/issues/new).

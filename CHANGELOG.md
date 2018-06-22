@@ -3,6 +3,15 @@ All notable changes to the "vscode-java-saber" extension will be documented in t
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.0.4 - 2018-6-22
+### Added
+- Sort projects by name
+- Run maven goals
+
+### Changed
+- Generate Getters and Setters: change the get method name when the type of property is boolean or Boolean
+- Change the menus of new java files
+
 ## 0.0.3 - 2018-6-6
 ### Fixed
 - fix bug when get directory of java file
