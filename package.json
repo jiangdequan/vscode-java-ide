@@ -50,6 +50,10 @@
         },
         "commands": [
             {
+                "command": "extension.newFunctions",
+                "title": "New"
+            },
+            {
                 "command": "extension.newAnnotationFile",
                 "title": "Java: New Annotation File"
             },
@@ -66,82 +70,58 @@
                 "title": "Java: New Interface File"
             },
             {
-                "command": "extension.generateGettersAndSetters",
-                "title": "Java: Generate Getters and Setters..."
+                "command": "extension.newHtmlFile",
+                "title": "Java: New HTML File"
             },
             {
-                "command": "extension.copyQualifiedName",
-                "title": "Java: Copy Qualified Name"
+                "command": "extension.newJspFile",
+                "title": "Java: New JSP File"
             },
             {
                 "command": "extension.newPackage",
                 "title": "Java: New Package"
             },
             {
+                "command": "extension.generateGettersAndSetters",
+                "title": "Generate Getters and Setters..."
+            },
+            {
+                "command": "extension.copyQualifiedName",
+                "title": "Copy Qualified Name"
+            },
+            {
                 "command": "extension.sortWorkspace",
-                "title": "IDE: Sort Project By Name"
+                "title": "Sort Project By Name"
             },
             {
                 "command": "extension.executeMavenGoal",
-                "title": "IDE: Maven build"
+                "title": "Run As"
             }
         ],
         "menus": {
             "explorer/context": [
                 {
-                    "when": "resourceLangId == java",
-                    "command": "extension.newAnnotationFile",
-                    "alt": "extension.newAnnotationFile"
-                },
-                {
-                    "when": "explorerResourceIsFolder == true",
-                    "command": "extension.newAnnotationFile",
-                    "alt": "extension.newAnnotationFile"
-                },
-                {
-                    "when": "resourceLangId == java",
-                    "command": "extension.newClassFile",
-                    "alt": "extension.newClassFile"
-                },
-                {
-                    "when": "explorerResourceIsFolder == true",
-                    "command": "extension.newClassFile",
-                    "alt": "extension.newClassFile"
-                },
-                {
-                    "when": "resourceLangId == java",
-                    "command": "extension.newEnumFile",
-                    "alt": "extension.newEnumFile"
-                },
-                {
-                    "when": "explorerResourceIsFolder == true",
-                    "command": "extension.newEnumFile",
-                    "alt": "extension.newEnumFile"
-                },
-                {
-                    "when": "resourceLangId == java",
-                    "command": "extension.newInterfaceFile",
-                    "alt": "extension.newInterfaceFile"
-                },
-                {
-                    "when": "explorerResourceIsFolder == true",
-                    "command": "extension.newInterfaceFile",
-                    "alt": "extension.newInterfaceFile"
+                    "when": "filesExplorerFocus",
+                    "command": "extension.newFunctions",
+                    "group": "1_javaactions"
                 },
                 {
                     "when": "resourceLangId == java",
                     "command": "extension.copyQualifiedName",
-                    "alt": "extension.copyQualifiedName"
-                },
-                {
-                    "when": "explorerResourceIsFolder == true",
-                    "command": "extension.newPackage",
-                    "alt": "extension.newPackage"
+                    "alt": "extension.copyQualifiedName",
+                    "group": "1_javaactions"
                 },
                 {
                     "when": "resourceFilename == pom.xml",
                     "command": "extension.executeMavenGoal",
-                    "alt": "extension.executeMavenGoal"
+                    "alt": "extension.executeMavenGoal",
+                    "group": "1_javaactions"
+                },
+                {
+                    "when": "filesExplorerFocus",
+                    "command": "extension.sortWorkspace",
+                    "alt": "extension.sortWorkspace",
+                    "group": "1_javaactions"
                 }
             ],
             "editor/context": [
@@ -159,6 +139,10 @@
                 },
                 {
                     "command": "extension.newPackage",
+                    "when": "never"
+                },
+                {
+                    "command": "extension.newFunctions",
                     "when": "never"
                 }
             ]
