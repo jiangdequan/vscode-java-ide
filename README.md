@@ -77,3 +77,6 @@ You can find the full list of issues at [Issue Tracker](https://github.com/jiang
 
 # License
 Dual-licensed under [BSD 2-Clause License](http://opensource.org/licenses/BSD-2-Clause) and [GPLv2 with the Classpath Exception](http://openjdk.java.net/legal/gplv2+ce.html).
+
+![](https://raw.githubusercontent.com/paulvi/vscode-java-ide-pack/master/duke-plug.png)
+This extention is included into ["Java IDE Pack" extention pack](https://github.com/paulvi/vscode-java-ide-pack/).
