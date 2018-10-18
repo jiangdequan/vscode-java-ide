@@ -3,6 +3,11 @@ All notable changes to the "vscode-java-saber" extension will be documented in t
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.0.5 - 2018-10-18
+### Fixed
+- Getter Setter not generated properly when using complex data types #5
+- Failed to create a new file or package in Ubuntu #4
+
 ## 0.0.4 - 2018-6-22
 ### Added
 - Sort projects by name
