@@ -86,6 +86,10 @@
                 "title": "Generate Getters and Setters..."
             },
             {
+                "command": "extension.generateDocs",
+                "title": "Generate Java Docs..."
+            },
+            {
                 "command": "extension.copyQualifiedName",
                 "title": "Copy Qualified Name"
             },
@@ -129,6 +133,12 @@
                     "when": "resourceLangId == java",
                     "command": "extension.generateGettersAndSetters",
                     "alt": "extension.generateGettersAndSetters",
+                    "group": "1_modification"
+                },
+                {
+                    "when": "resourceLangId == java",
+                    "command": "extension.generateDocs",
+                    "alt": "extension.generateDocs",
                     "group": "1_modification"
                 }
             ],
