@@ -2,7 +2,7 @@
     "name": "vscode-java-saber",
     "displayName": "Java IDE",
     "description": "To make the vscode work as Eclipse or IDEA when you are coding in java.",
-    "version": "0.0.5",
+    "version": "0.1.0",
     "publisher": "YouMayCallMeV",
     "repository": {
         "url": "https://github.com/jiangdequan/vscode-java-saber"
@@ -16,7 +16,8 @@
         "copy qualified name",
         "generate getter setter",
         "new package",
-        "sort projects"
+        "sort projects",
+        "generate java docs"
     ],
     "homepage": "https://github.com/jiangdequan/vscode-java-saber/blob/master/README.md",
     "engines": {
@@ -139,6 +140,12 @@
                     "when": "resourceLangId == java",
                     "command": "extension.generateDocs",
                     "alt": "extension.generateDocs",
+                    "group": "1_modification"
+                },
+                {
+                    "when": "resourceLangId == java",
+                    "command": "extension.copyQualifiedName",
+                    "alt": "extension.copyQualifiedName",
                     "group": "1_modification"
                 }
             ],

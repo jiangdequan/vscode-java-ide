@@ -3,6 +3,13 @@ All notable changes to the "vscode-java-saber" extension will be documented in t
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.0 - 2018-10-31
+### Added
+- Generate java docs
+
+### Fixed
+- Error occured at generating getter setter when the class have Internal class
+
 ## 0.0.5 - 2018-10-18
 ### Fixed
 - Getter Setter not generated properly when using complex data types #5
