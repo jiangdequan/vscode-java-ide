@@ -1,6 +1,6 @@
 <p align="center"><a href="https://github.com/jiangdequan/vscode-java-saber" target="_blank" rel="noopener noreferrer"><img width="100" src="https://github.com/jiangdequan/vscode-java-saber/blob/master/logo.jpg" alt="Java IDE: Saber logo"></a></p>
 
-<h1 align="center">Saber for VS Code | [中文](README_CN.md)</h1>
+<h1 align="center">Saber for VS Code [<a href="README_CN.md">中文</a>]</h1>
 
 <p align="center">
     <a href="https://marketplace.visualstudio.com/items?itemName=YouMayCallMeV.vscode-java-saber"><img alt="Visual Studio Marketplace" src="https://img.shields.io/vscode-marketplace/d/youmaycallmev.vscode-java-saber.svg"/></a>

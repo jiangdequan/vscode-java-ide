@@ -164,18 +164,20 @@
                 }
             ]
         },
-        "keybindings": [{
-            "command": "extension.generateDocs",
-            "key": "alt+i",
-            "mac": "cmd+i",
-            "when": "editorHasSelection"
-        },
-        {
-            "command": "extension.generateGettersAndSetters",
-            "key": "alt+insert",
-            "mac": "cmd+insert",
-            "when": "editorTextFocus"
-        }]
+        "keybindings": [
+            {
+                "command": "extension.generateDocs",
+                "key": "alt+i",
+                "mac": "cmd+i",
+                "when": "editorHasSelection"
+            },
+            {
+                "command": "extension.generateGettersAndSetters",
+                "key": "alt+insert",
+                "mac": "cmd+insert",
+                "when": "editorTextFocus"
+            }
+        ]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
