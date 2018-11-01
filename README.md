@@ -1,18 +1,28 @@
-# Saber for VS Code | [中文](README_CN.md)
+<p align="center"><a href="https://github.com/jiangdequan/vscode-java-saber" target="_blank" rel="noopener noreferrer"><img width="100" src="https://github.com/jiangdequan/vscode-java-saber/blob/master/logo.jpg" alt="Java IDE: Saber logo"></a></p>
+
+<h1 align="center">Saber for VS Code | [中文](README_CN.md)</h1>
+
+<p align="center">
+    <a href="https://marketplace.visualstudio.com/items?itemName=YouMayCallMeV.vscode-java-saber"><img alt="Visual Studio Marketplace" src="https://img.shields.io/vscode-marketplace/d/youmaycallmev.vscode-java-saber.svg"/></a>
+    <a href="https://github.com/jiangdequan/vscode-java-saber/releases"><img alt="GitHub release" src="https://img.shields.io/github/release/jiangdequan/vscode-java-saber.svg"/></a>
+    <a href="javascript:;"><img alt="Platform" src="https://img.shields.io/badge/platform-windows|osx|linux-lightgrey.svg"/></a>
+    <a href="javascript:;"><img alt="Language" src="https://img.shields.io/badge/language-javascript-orange.svg"/></a>
+    <a href="javascript:;"><img alt="License" src="https://img.shields.io/badge/license-BSD&GPLv2-black.svg"/></a>
+</p>
+
 This extension includes many useful utilities for Java. To make the vscode work as Eclipse or IDEA when you are coding in java.
 
 # Overview
 It makes users coding in java more efficient. Here`s a list of features:
-* New Java files(annotation/class/interface/enum)
+* New: Java files(annotation/class/interface/enum/package/JSP/HTML)
 * Generate Getters and Getters
 * Copy Qualified Name
-* New Package
 * Sort Project By Name
 * Run Maven Goals
+* Generate Docs
 
 Some features ready to do:
 * Rename Java File
-* Generate Docs
 
 # Requirements
 * JDK (version 1.8.0 or later)
@@ -21,56 +31,61 @@ Some features ready to do:
 # Install
 * Install from the [Marketplace](https://marketplace.visualstudio.com/), you can find it by typing: "vscode-java-saber" "Java IDE"
 
-Or:  
-
-* Clone this project
-* Copy the project to the directory of extension
-* Restart VS Code
-
-# Use
+# How To Use
 PS: These functions are implemented by parsing strings in java files. Therefore, your codes should best meet the specification of java.
 
-## New Java Files
-1. Right click a java file or a directory in the explorer
-![Alt text](./preview/java.ide.new.files.menu.png)
-![Alt text](./preview/java.ide.new.files.png)
+## New
+* __Method 1__: Right click on a java file or a directory in the explorer
+![Alt text](./preview/java.ide.new.method1.step1.png)
+![Alt text](./preview/java.ide.new.method1.step2.png)
 
-2. You must open a java file in text editor => ctrl + shift + p => type: java new
-![Alt text](./preview/java.ide.new.java.file.cmd.png)
-It will create a java file in the same directory of the opened file
+* __Method 2__: You must open a java file in text editor => ctrl + shift + p => type: java new
+![Alt text](./preview/java.ide.new.method2.png)
+It will create a java file in the same directory of the opened file.
 
 ## Generate Getters and Setters
-1. Right click the opened java file in the editor
-![Alt text](./preview/java.ide.generate.getter.setter.png)
+* __Method 1__: Right click on the opened java file in the editor
+![Alt text](./preview/java.ide.generate.getter.setter.method1.png)
 
-2. You must open a java file in text editor => ctrl + shift + p => type: getter setter
-![Alt text](./preview/java.ide.generate.getter.setter.cmd.png)
+* __Method 2__: You must open a java file in text editor => ctrl + shift + p => type: getter setter
+![Alt text](./preview/java.ide.generate.getter.setter.method2.png)
+
+* __Method 3__: Use keyboard shortcut 'alt + insert'
 
 ## Copy Qualified Name
-1. Right click the opened java file in the explorer
-![Alt text](./preview/java.ide.copy.qualified.name.png)
+* __Method 1__: Right click on the opened java file in the explorer
+![Alt text](./preview/java.ide.copy.qualified.name.method1.png)
 
-2. You must open a java file in text editor => ctrl + shift + p => type: copy qualified name
-![Alt text](./preview/java.ide.copy.qualified.name.cmd.png)
+* __Method 2__: You must open a java file in text editor => ctrl + shift + p => type: copy qualified name
+![Alt text](./preview/java.ide.copy.qualified.name.method2.png)
 
-## New Package
-1. Right click a directory
-![Alt text](./preview/java.ide.new.package.png)
+* __Method 3__: Right click on the opened java file in the editor
+![Alt text](./preview/java.ide.copy.qualified.name.method3.png)
 
 ## Sort Project By Name
-1.Right click at the project explorer
-![Alt text](./preview/java.ide.sort.project.menu.png)
+Edit the config "ide.projectAutoSort" to true, it will auto sort projects by name when adding a project to the workspace, default is false
 
-2.edit the config "ide.projectAutoSort" to true, it will auto sort projects by name when adding a project to the workspace, default is false
+* __Method 1__: Right click on the project explorer
+![Alt text](./preview/java.ide.sort.project.method1.png)
 
-3.ctrl + shift + p => type: Sort Project By Name
+* __Method 2__: ctrl + shift + p => type: Sort Project By Name
+![Alt text](./preview/java.ide.sort.project.method2.png)
 
 ## Run Maven Goals
-1. Right click a pom.xml
-![Alt text](./preview/java.ide.run.as.menu.png)
-![Alt text](./preview/java.ide.run.as.goals.png)
+Edit the config "ide.mavenDefaultGoals" to what you like, default is "clean install -Dmaven.test.skip=true" and "clean install"
 
-2.edit the config "ide.mavenDefaultGoals" to what you like, default is "clean install -Dmaven.test.skip=true" and "clean install"
+* __Method 1__: Right click on a pom.xml file
+![Alt text](./preview/java.ide.run.as.method1.step1.png)
+![Alt text](./preview/java.ide.run.as.method1.step2.png)
+
+## Generate Docs
+* __Method 1__: 
+1. Select the codes you want to generate java docs as below
+![Alt text](./preview/java.ide.generate.docs.method1.step1.1.png)
+![Alt text](./preview/java.ide.generate.docs.method1.step1.2.png)
+
+2. Then right click on the opened java file in the editor or use keyboard shortcut 'alt + i'
+![Alt text](./preview/java.ide.generate.docs.method1.step2.1.png)
 
 # Feedback and Questions
 You can find the full list of issues at [Issue Tracker](https://github.com/jiangdequan/vscode-java-saber/issues). You can submit a [bug or feature suggestion](https://github.com/jiangdequan/vscode-java-saber/issues/new).
