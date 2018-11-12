@@ -44,6 +44,7 @@ PS: 该扩展的大多数功能是通过解析字符串来实现的. 因此, 确
 则会在当前打开的编辑器文件的相同目录下创建Java文件.
 
 ## 生成get和set方法
+__已知问题：当类中定义了内部类时，生成getters/setters会出现问题__
 * __方法一__：右键单击需要生成get和set方法的文件
 ![Alt text](./preview/java.ide.generate.getter.setter.method1.png)
 

@@ -44,6 +44,7 @@ PS: These functions are implemented by parsing strings in java files. Therefore,
 It will create a java file in the same directory of the opened file.
 
 ## Generate Getters and Setters
+__Known issue: When the inner class is defined in the class, there will be problems with generating getters and setters__
 * __Method 1__: Right click on the opened java file in the editor
 ![Alt text](./preview/java.ide.generate.getter.setter.method1.png)
 
