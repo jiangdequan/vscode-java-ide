@@ -12,19 +12,20 @@
     },
     "icon": "logo.jpg",
     "keywords": [
-        "new java file",
+        "new files or package",
         "copy qualified name",
         "generate getter setter",
-        "new package",
         "sort projects",
-        "generate java docs"
+        "generate java docs",
+        "execute maven goals"
     ],
     "homepage": "https://github.com/jiangdequan/vscode-java-saber/blob/master/README.md",
     "engines": {
         "vscode": "^1.18.0"
     },
     "categories": [
-        "Other"
+        "Other",
+        "Programming Languages"
     ],
     "activationEvents": [
         "*"
