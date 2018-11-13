@@ -1,10 +1,10 @@
-<p align="center"><a href="https://github.com/jiangdequan/vscode-java-saber" target="_blank" rel="noopener noreferrer"><img width="100" src="https://github.com/jiangdequan/vscode-java-saber/blob/master/logo.jpg" alt="Java IDE: Saber logo"></a></p>
+<p align="center"><a href="https://github.com/jiangdequan/vscode-java-saber" target="_blank" rel="noopener noreferrer"><img width="100" src="https://raw.githubusercontent.com/jiangdequan/vscode-java-saber/master/logo.jpg" alt="Java IDE: Saber logo"></a></p>
 
 <h1 align="center">Saber for VS Code [<a href="README_CN.md">中文</a>]</h1>
 
 <p align="center">
-    <a href="https://marketplace.visualstudio.com/items?itemName=YouMayCallMeV.vscode-java-saber"><img alt="Visual Studio Marketplace" src="https://img.shields.io/vscode-marketplace/d/youmaycallmev.vscode-java-saber.svg"/></a>
-    <a href="https://github.com/jiangdequan/vscode-java-saber/releases"><img alt="GitHub release" src="https://img.shields.io/github/release/jiangdequan/vscode-java-saber.svg"/></a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=YouMayCallMeV.vscode-java-saber"><img alt="Marketplace Version" src="https://vsmarketplacebadge.apphb.com/version-short/youmaycallmev.vscode-java-saber.svg"/></a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=YouMayCallMeV.vscode-java-saber"><img alt="Visual Studio Marketplace" src="https://vsmarketplacebadge.apphb.com/installs-short/youmaycallmev.vscode-java-saber.svg"/></a>
     <a href="javascript:;"><img alt="Platform" src="https://img.shields.io/badge/platform-windows|osx|linux-lightgrey.svg"/></a>
     <a href="javascript:;"><img alt="Language" src="https://img.shields.io/badge/language-javascript-orange.svg"/></a>
     <a href="javascript:;"><img alt="License" src="https://img.shields.io/badge/license-BSD&GPLv2-black.svg"/></a>
