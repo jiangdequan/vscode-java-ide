@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/jiangdequan/vscode-java-saber" target="_blank" rel="noopener noreferrer"><img width="100" src="https://github.com/jiangdequan/vscode-java-saber/blob/master/logo.jpg" alt="Java IDE: Saber logo"></a></p>
+<p align="center"><a href="https://github.com/jiangdequan/vscode-java-saber" target="_blank" rel="noopener noreferrer"><img width="100" src="https://raw.githubusercontent.com/jiangdequan/vscode-java-saber/master/logo.jpg" alt="Java IDE: Saber logo"></a></p>
 
 <h1 align="center">Saber for VS Code [<a href="README_CN.md">中文</a>]</h1>
 
