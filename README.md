@@ -10,7 +10,9 @@
     <a href="javascript:;"><img alt="License" src="https://img.shields.io/badge/license-BSD&GPLv2-black.svg"/></a>
 </p>
 
-This extension includes many useful utilities for Java. To make the vscode work as Eclipse or IDEA when you are coding in java.
+This extension includes many useful utilities for Java. To make the vscode work as Eclipse or IDEA when you are coding in java.  
+These functions are implemented by parsing strings in java files. Therefore, your codes should best meet the specification of java.  
+If you have some good ideas, you can submit a [feature suggestion](https://github.com/jiangdequan/vscode-java-saber/issues/new) here.
 
 # Overview
 It makes users coding in java more efficient. Here`s a list of features:
@@ -32,7 +34,6 @@ Some features ready to do:
 * Install from the [Marketplace](https://marketplace.visualstudio.com/), you can find it by typing: "vscode-java-saber" "Java IDE"
 
 # How To Use
-PS: These functions are implemented by parsing strings in java files. Therefore, your codes should best meet the specification of java.
 
 ## New
 * __Method 1__: Right click on a java file or a directory in the explorer
