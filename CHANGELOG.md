@@ -3,6 +3,10 @@ All notable changes to the "vscode-java-saber" extension will be documented in t
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.1 - 2019-11-27
+## Fixed
+- #11(wrong package name for New file under src/test/java)
+
 ## 0.1.0 - 2018-10-31
 ### Added
 - Generate java docs
