@@ -2,7 +2,7 @@
     "name": "vscode-java-saber",
     "displayName": "Java IDE",
     "description": "To make the vscode work as Eclipse or IDEA when you are coding in java.",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "YouMayCallMeV",
     "repository": {
         "url": "https://github.com/jiangdequan/vscode-java-saber"
@@ -186,7 +186,7 @@
     },
     "devDependencies": {
         "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
+        "vscode": "^1.1.36",
         "eslint": "^4.11.0",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"

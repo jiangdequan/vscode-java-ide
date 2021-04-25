@@ -3,6 +3,11 @@ All notable changes to the "vscode-java-saber" extension will be documented in t
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.1.2 - 2021-04-25
+## Fixed
+- #12 (Java getter and setter not working)
+- #19 (Getter and setter generation : wildcard in generics not supported)
+
 ## 0.1.1 - 2019-11-27
 ## Fixed
 - #11(wrong package name for New file under src/test/java)
